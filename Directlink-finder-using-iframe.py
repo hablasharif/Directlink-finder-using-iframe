@@ -6,6 +6,14 @@ from lxml import html
 import re
 from urllib.parse import urlparse
 
+
+# Create a link to the external URL
+url = "https://danga-sitemap-finderpy.streamlit.app/"
+link_text = "Visit this if you want to find multiple website sitemap"
+
+# Display the link
+st.markdown(f"[{link_text}]({url})")
+
 # User agents to mimic different browsers
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36",
